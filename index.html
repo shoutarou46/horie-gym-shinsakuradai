@@ -42,19 +42,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Zen+Maru+Gothic:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav class="nav" aria-label="メインナビゲーション">
-    <div class="nav-logo">
-      HORIE GYM
-      <small>ホリエジム 新桜台</small>
+  <header class="sticky-header" id="stickyHeader" aria-label="メインナビゲーション">
+    <div class="header-logo">
+      ホリエジム
+      <span>練馬区新桜台・パーソナルジム</span>
     </div>
-    <div class="nav-pill">新桜台駅 徒歩1分</div>
-  </nav>
+    <a href="#cta" class="header-cta">初回体験はこちら</a>
+  </header>
 
   <header class="hero" itemscope itemtype="https://schema.org/SportsActivityLocation">
     <meta itemprop="name" content="ホリエジム 新桜台">
@@ -97,7 +97,7 @@
   <!-- Hero → Problem wave -->
   <div class="wave-sep wave-from-hero" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,40 C240,70 480,10 720,45 C960,70 1200,10 1440,40 L1440,70 L0,70 Z" fill="#FEF9F0"/>
+      <path d="M0,40 C240,70 480,10 720,45 C960,70 1200,10 1440,40 L1440,70 L0,70 Z" fill="#fffef8"/>
     </svg>
   </div>
 
@@ -128,10 +128,10 @@
     </div>
   </section>
 
-  <!-- Problem → Section-alt wave -->
-  <div class="wave-sep wave-from-bg" aria-hidden="true">
+  <!-- Problem → Worry wave -->
+  <div class="wave-sep wave-from-cream" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,30 C300,70 600,0 900,40 C1100,65 1300,15 1440,30 L1440,70 L0,70 Z" fill="#FDF3E3"/>
+      <path d="M0,30 C300,70 600,0 900,40 C1100,65 1300,15 1440,30 L1440,70 L0,70 Z" fill="#fdf2d8"/>
     </svg>
   </div>
 
@@ -195,10 +195,10 @@
     </div>
   </section>
 
-  <!-- Section-alt → Reason wave -->
-  <div class="wave-sep wave-from-bg2" aria-hidden="true">
+  <!-- Worry → Reason wave -->
+  <div class="wave-sep wave-from-sand" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,50 C240,20 480,70 720,35 C960,0 1200,55 1440,50 L1440,70 L0,70 Z" fill="#FEF9F0"/>
+      <path d="M0,50 C240,20 480,70 720,35 C960,0 1200,55 1440,50 L1440,70 L0,70 Z" fill="#ffffff"/>
     </svg>
   </div>
 
@@ -246,9 +246,9 @@
 </section>
 
   <!-- Reason → Features wave -->
-  <div class="wave-sep wave-from-bg" aria-hidden="true">
+  <div class="wave-sep wave-from-white" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,35 C360,70 720,5 1080,50 C1260,70 1380,20 1440,35 L1440,70 L0,70 Z" fill="#FDF3E3"/>
+      <path d="M0,35 C360,70 720,5 1080,50 C1260,70 1380,20 1440,35 L1440,70 L0,70 Z" fill="#e4f6fb"/>
     </svg>
   </div>
 
@@ -375,9 +375,9 @@
   </section>
 
   <!-- Features → Why wave -->
-  <div class="wave-sep wave-from-bg2" aria-hidden="true">
+  <div class="wave-sep wave-from-ocean-pale" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,45 C200,10 400,70 720,30 C1000,0 1200,60 1440,45 L1440,70 L0,70 Z" fill="#FEF9F0"/>
+      <path d="M0,45 C200,10 400,70 720,30 C1000,0 1200,60 1440,45 L1440,70 L0,70 Z" fill="#ffffff"/>
     </svg>
   </div>
 
@@ -445,9 +445,9 @@
   </section>
 
   <!-- Why → Voice wave -->
-  <div class="wave-sep wave-from-bg" aria-hidden="true">
+  <div class="wave-sep wave-from-white" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,25 C360,70 720,0 1080,45 C1260,65 1380,10 1440,25 L1440,70 L0,70 Z" fill="#FDF3E3"/>
+      <path d="M0,25 C360,70 720,0 1080,45 C1260,65 1380,10 1440,25 L1440,70 L0,70 Z" fill="#fdf2d8"/>
     </svg>
   </div>
 
@@ -470,15 +470,15 @@
   </section>
 
   <!-- Voice → Flow wave -->
-  <div class="wave-sep wave-from-bg2" aria-hidden="true">
+  <div class="wave-sep wave-from-sand" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,40 C300,15 600,65 900,25 C1100,5 1300,55 1440,40 L1440,70 L0,70 Z" fill="#FEF9F0"/>
+      <path d="M0,40 C300,15 600,65 900,25 C1100,5 1300,55 1440,40 L1440,70 L0,70 Z" fill="#ffffff"/>
     </svg>
   </div>
 
   <section class="section flow" aria-labelledby="flow-heading">
     <div class="section-inner">
-      <p class="section-eyebrow reveal" style="justify-content:center;">体験の流れ</p>
+      <p class="section-eyebrow section-eyebrow-center reveal">体験の流れ</p>
       <h2 class="section-h2 reveal reveal-delay-1" id="flow-heading" style="text-align:center;">体験レッスンの流れ</h2>
       <div class="flow-steps" itemscope itemtype="https://schema.org/HowTo">
         <meta itemprop="name" content="体験レッスンの流れ">
@@ -522,9 +522,9 @@
   </section>
 
   <!-- Flow → CTA wave -->
-  <div class="wave-sep wave-from-bg" aria-hidden="true">
+  <div class="wave-sep wave-from-white" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,35 C240,70 480,5 720,40 C960,70 1200,10 1440,35 L1440,70 L0,70 Z" fill="#FFE8D5"/>
+      <path d="M0,35 C240,70 480,5 720,40 C960,70 1200,10 1440,35 L1440,70 L0,70 Z" fill="#0a3d52"/>
     </svg>
   </div>
 
@@ -567,7 +567,7 @@
   </section>
 
   <footer>
-    <div class="footer-logo">HORIE GYM — 新桜台</div>
+    <div class="footer-logo">ホリエジム — 練馬区新桜台 パーソナルジム</div>
     <p class="footer-copy">© 2025 ホリエジム 新桜台. All rights reserved.</p>
   </footer>
 
