@@ -29,3 +29,17 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ─── PHOTO PLACEHOLDERS ─── */
+const photoContainerSelector = '.intro-photo-wrap, .intro-pain-img, .pain-img-wrap, .why-photo-wrap, .about-photo-wrap, .reason-card-img';
+
+document.querySelectorAll(photoContainerSelector + ' img').forEach(img => {
+  const container = img.closest(photoContainerSelector);
+  if (!container) return;
+  const markLoaded = () => container.classList.add('has-photo');
+  if (img.complete && img.naturalWidth > 0) {
+    markLoaded();
+  } else {
+    img.addEventListener('load', markLoaded);
+  }
+});
