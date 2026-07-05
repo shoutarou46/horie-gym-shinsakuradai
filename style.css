@@ -1073,3 +1073,15 @@ footer {
 
 .has-photo .ph-label,
 .has-photo .intro-pain-placeholder { display: none; }
+
+/* ─── CAMPAIGN BANNER ─── */
+.campaign-banner-wrap {
+  width: 100%;
+  background: #fff;
+}
+
+.campaign-banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
