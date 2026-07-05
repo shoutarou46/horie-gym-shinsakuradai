@@ -1005,6 +1005,7 @@ footer {
   .reason-card-img { width: 100%; min-height: 160px; }
   .illust-grid { grid-template-columns: 1fr; }
   .hero-inner { padding: 60px 18px 110px; }
+  .hero-main-title { font-size: 4.5vw; }
   .intro-pain-list { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .cta-btn-wrap { flex-direction: column; align-items: center; }
   .btn-hotpepper, .btn-line { width: 100%; justify-content: center; }
