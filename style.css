@@ -1078,10 +1078,14 @@ footer {
 .campaign-banner-wrap {
   width: 100%;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
 }
 
 .campaign-banner-img {
   display: block;
   width: 100%;
+  max-width: 640px;
   height: auto;
 }
