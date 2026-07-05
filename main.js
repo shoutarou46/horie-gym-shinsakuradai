@@ -23,12 +23,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-/* ─── SCROLL REVEAL ─── */
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 /* ─── PHOTO PLACEHOLDERS ─── */
 const photoContainerSelector = '.intro-photo-wrap, .intro-pain-img, .pain-img-wrap, .why-photo-wrap, .about-photo-wrap, .reason-card-img';
