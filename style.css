@@ -39,18 +39,18 @@ a { text-decoration: none; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #0a3d52 0%, #105f7a 100%);
-  border-bottom: 2px solid rgba(26,154,184,0.22);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   transition: box-shadow 0.3s ease;
 }
 .sticky-header.scrolled {
-  box-shadow: 0 2px 20px rgba(10,61,82,0.3);
+  box-shadow: 0 2px 20px rgba(10,61,82,0.12);
 }
 .header-logo {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--white);
+  color: var(--text);
   line-height: 1.5;
 }
 .header-logo span {
@@ -58,7 +58,7 @@ a { text-decoration: none; }
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.68rem;
   font-weight: 300;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-light);
   letter-spacing: 0.08em;
 }
 .header-cta {
@@ -170,7 +170,7 @@ section { padding: 100px 24px; }
   background: var(--warm-gold);
 }
 .section-title {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: clamp(1.8rem, 4.5vw, 2.6rem);
   font-weight: 500;
   color: var(--text);
@@ -178,7 +178,7 @@ section { padding: 100px 24px; }
   margin-bottom: 24px;
 }
 .section-lead {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: clamp(0.95rem, 2vw, 1.05rem);
   color: var(--text-mid);
   line-height: 2.2;
@@ -247,7 +247,7 @@ section { padding: 100px 24px; }
   border-left: 3px solid var(--warm-gold);
   background: rgba(253,242,216,0.7);
   padding: 36px 40px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   line-height: 2.3;
   color: var(--text-mid);
@@ -366,7 +366,7 @@ section { padding: 100px 24px; }
 }
 .why-problem { display: flex; flex-direction: column; gap: 16px; }
 .why-problem > p {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.93rem;
   color: var(--text-mid);
   line-height: 2.1;
@@ -386,7 +386,7 @@ section { padding: 100px 24px; }
   border-left: 3px solid var(--warm-gold);
   background: rgba(253,242,216,0.7);
   padding: 20px 24px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.9rem;
   color: var(--text-mid);
   line-height: 2.1;
@@ -394,7 +394,7 @@ section { padding: 100px 24px; }
 }
 .why-solution { display: flex; flex-direction: column; gap: 20px; }
 .why-solution > p {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.93rem;
   color: var(--text-mid);
   line-height: 2.3;
@@ -403,7 +403,7 @@ section { padding: 100px 24px; }
 .why-solution-box {
   background: var(--ocean-pale);
   padding: 28px 32px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.93rem;
   color: var(--text);
   line-height: 2.2;
@@ -420,7 +420,7 @@ section { padding: 100px 24px; }
 /* ─── ABOUT/FEATURES SECTION ─── */
 .about-section { background: var(--white); }
 .about-lead {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: clamp(0.95rem, 2vw, 1.05rem);
   color: var(--text-mid);
   line-height: 2.2;
@@ -435,7 +435,7 @@ section { padding: 100px 24px; }
 }
 .about-photo-wrap img { width: 100%; height: auto; }
 .features-heading {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
   color: var(--text);
@@ -520,7 +520,7 @@ section { padding: 100px 24px; }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--ocean);
@@ -529,14 +529,14 @@ section { padding: 100px 24px; }
   letter-spacing: 0.04em;
 }
 .reason-body h3 {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
   margin-bottom: 10px;
 }
 .reason-body p {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.88rem;
   color: var(--text-mid);
   line-height: 2;
@@ -574,7 +574,7 @@ section { padding: 100px 24px; }
 .philosophy-section { background: var(--white); }
 .philosophy-inner { text-align: center; }
 .philosophy-inner > p {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.93rem;
   color: var(--text-mid);
   line-height: 2.5;
@@ -588,7 +588,7 @@ section { padding: 100px 24px; }
 }
 .philosophy-img-wrap img { width: 100%; height: auto; }
 .philosophy-highlight {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
   color: var(--ocean);
@@ -626,7 +626,7 @@ section { padding: 100px 24px; }
   width: 48px; height: 48px;
   background: var(--ocean);
   color: var(--white);
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
   display: flex;
@@ -643,14 +643,14 @@ section { padding: 100px 24px; }
   margin-bottom: 16px;
 }
 .flow-body h3 {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
   margin-bottom: 6px;
 }
 .flow-body p {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.88rem;
   color: var(--text-mid);
   line-height: 1.8;
@@ -691,7 +691,7 @@ section { padding: 100px 24px; }
   background: rgba(201,151,58,0.5);
 }
 .cta-title {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 500;
   color: var(--white);
@@ -699,7 +699,7 @@ section { padding: 100px 24px; }
   margin-bottom: 24px;
 }
 .cta-text {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.93rem;
   color: rgba(255,255,255,0.72);
   line-height: 2.2;
@@ -835,7 +835,7 @@ section { padding: 100px 24px; }
 .faq-a {
   display: none;
   padding: 0 24px 22px calc(24px + 14px + 28px);
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.88rem;
   color: var(--text-mid);
   line-height: 2;
@@ -850,7 +850,7 @@ section { padding: 100px 24px; }
 .info-inner { max-width: 820px; margin: 0 auto; text-align: center; }
 .info-rule { width: 36px; height: 2px; background: var(--warm-gold); margin: 20px auto; }
 .info-detail {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.88rem;
   color: var(--text-mid);
   line-height: 2.1;
@@ -868,7 +868,8 @@ section { padding: 100px 24px; }
 
 /* ─── FOOTER ─── */
 footer {
-  background: linear-gradient(135deg, #0a3d52 0%, #105f7a 100%);
+  background: var(--white);
+  border-top: 1px solid var(--border);
   padding: 48px 24px 36px;
   text-align: center;
   position: relative;
@@ -888,24 +889,24 @@ footer {
   z-index: 1;
 }
 .footer-logo {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--white);
+  color: var(--text);
   margin-bottom: 8px;
 }
 .footer-tagline {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.45);
+  color: var(--text-light);
   font-weight: 300;
   letter-spacing: 0.05em;
   margin-bottom: 28px;
 }
 .footer-info {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-mid);
   line-height: 2;
   font-weight: 300;
   margin-bottom: 28px;
@@ -913,10 +914,10 @@ footer {
 .footer-copy {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.28);
+  color: var(--text-light);
   letter-spacing: 0.1em;
   padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid var(--border);
 }
 
 /* ─── RESPONSIVE ─── */
