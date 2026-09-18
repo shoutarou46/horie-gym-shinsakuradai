@@ -8,6 +8,8 @@ html { scroll-behavior: smooth; }
   --ocean-pale: #e4f6fb;
   --coral:      #d4613c;
   --coral-dark: #b04a28;
+  --orange-bright:      #ff7a00;
+  --orange-bright-dark: #e56800;
   --cream:      #fffef8;
   --sand:       #fdf2d8;
   --warm-gold:  #c9973a;
@@ -62,7 +64,7 @@ a { text-decoration: none; }
   letter-spacing: 0.08em;
 }
 .header-cta {
-  background: var(--coral);
+  background: var(--orange-bright);
   color: var(--white);
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.82rem;
@@ -73,7 +75,7 @@ a { text-decoration: none; }
   transition: background 0.2s ease, transform 0.2s ease;
 }
 .header-cta:hover {
-  background: var(--coral-dark);
+  background: var(--orange-bright-dark);
   transform: translateY(-1px);
 }
 
@@ -111,7 +113,7 @@ a { text-decoration: none; }
 }
 .hero-btn {
   display: inline-block;
-  background: var(--coral);
+  background: var(--orange-bright);
   color: var(--white);
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.95rem;
@@ -122,7 +124,7 @@ a { text-decoration: none; }
   transition: background 0.2s ease, transform 0.2s ease;
 }
 .hero-btn:hover {
-  background: var(--coral-dark);
+  background: var(--orange-bright-dark);
   transform: translateY(-2px);
 }
 .hero-wave {
@@ -201,7 +203,7 @@ section { padding: 100px 24px; }
 /* ─── BUTTONS ─── */
 .btn-primary {
   display: inline-block;
-  background: var(--coral);
+  background: var(--orange-bright);
   color: var(--white);
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.9rem;
@@ -1004,6 +1006,9 @@ footer {
 }
 .campaign-banner-wrap--spaced {
   padding: 20px 0;
+}
+.campaign-banner-wrap--gap-top {
+  padding-top: 16px;
 }
 
 .campaign-banner-img {
