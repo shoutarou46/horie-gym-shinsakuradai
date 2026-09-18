@@ -732,6 +732,12 @@ section { padding: 100px 24px; }
   justify-content: center;
   flex-wrap: wrap;
 }
+.cta-subtitle-light {
+  color: var(--text-mid);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
+}
 .btn-hotpepper {
   display: inline-flex;
   align-items: center;
