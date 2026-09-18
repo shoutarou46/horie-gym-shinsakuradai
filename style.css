@@ -79,90 +79,34 @@ a { text-decoration: none; }
 
 /* ─── HERO ─── */
 .hero {
-  min-height: 100vh;
-  background: linear-gradient(160deg, var(--deep) 0%, var(--ocean) 70%, #0d6880 100%);
-  display: flex;
-  align-items: center;
   padding-top: 64px;
   position: relative;
   overflow: hidden;
+  background: #f4f1ea;
 }
-.hero::before {
-  content: '';
-  position: absolute;
-  width: 500px; height: 500px;
-  border-radius: 50%;
-  background: rgba(26,154,184,0.1);
-  top: -100px; right: -120px;
-  pointer-events: none;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  width: 280px; height: 280px;
-  border-radius: 50%;
-  background: rgba(212,97,60,0.08);
-  bottom: 120px; left: -60px;
-  pointer-events: none;
-}
-.hero-inner {
+.hero-img {
+  display: block;
   width: 100%;
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 80px 24px 130px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+  height: auto;
 }
-.hero-eyebrow {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.3em;
-  color: rgba(255,255,255,0.6);
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  animation: fadeUp 0.8s ease both;
-}
-.hero-eyebrow::before,
-.hero-eyebrow::after {
-  content: '';
-  width: 32px; height: 1px;
-  background: rgba(201,151,58,0.55);
-}
-.hero-main-title {
-  font-family: 'Shippori Mincho', serif;
-  font-size: clamp(1rem, 5vw, 2.5rem);
-  font-weight: 500;
-  color: var(--white);
-  line-height: 1.65;
-  margin-bottom: 24px;
-  letter-spacing: 0.04em;
-  animation: fadeUp 0.8s ease 0.1s both;
-}
-.hero-main-title em {
-  font-style: normal;
-  color: rgba(255,178,140,0.92);
-}
-.hero-sub {
-  font-family: 'Noto Serif JP', serif;
-  font-size: clamp(0.88rem, 2vw, 0.98rem);
-  color: rgba(255,255,255,0.68);
-  line-height: 2.1;
-  margin-bottom: 44px;
-  font-weight: 300;
-  animation: fadeUp 0.8s ease 0.2s both;
+@media (min-width: 700px) {
+  .hero-img {
+    width: auto;
+    max-width: 100%;
+    height: calc(100vh - 64px);
+    max-height: 820px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
 }
 .hero-cta-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  animation: fadeUp 0.8s ease 0.3s both;
+  padding: 28px 24px 56px;
+  position: relative;
+  z-index: 1;
 }
 .hero-btn {
   display: inline-block;
@@ -183,26 +127,8 @@ a { text-decoration: none; }
 .hero-note {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(0,0,0,0.45);
   letter-spacing: 0.1em;
-}
-.hero-badges {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 52px;
-  animation: fadeUp 0.8s ease 0.4s both;
-}
-.hero-badge {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.14);
-  color: rgba(255,255,255,0.7);
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 400;
-  padding: 6px 16px;
-  letter-spacing: 0.08em;
 }
 .hero-wave {
   position: absolute;
@@ -1004,14 +930,9 @@ footer {
   .reason-card { flex-direction: column; }
   .reason-card-img { width: 100%; min-height: 160px; }
   .illust-grid { grid-template-columns: 1fr; }
-  .hero-inner { padding: 60px 18px 110px; }
-  .hero-main-title { font-size: 4.5vw; }
   .intro-pain-list { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .cta-btn-wrap { flex-direction: column; align-items: center; }
   .btn-hotpepper, .btn-line { width: 100%; justify-content: center; }
-}
-@media (max-width: 400px) {
-  .hero-badges { gap: 8px; }
 }
 
 /* ─── PHOTO PLACEHOLDERS ─── */
