@@ -107,6 +107,7 @@ a { text-decoration: none; }
   padding: 28px 24px 56px;
   position: relative;
   z-index: 1;
+  background: #f4f1ea;
 }
 .hero-btn {
   display: inline-block;
