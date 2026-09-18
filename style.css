@@ -79,7 +79,7 @@ a { text-decoration: none; }
 
 /* ─── HERO ─── */
 .hero {
-  padding: 64px 0 0;
+  padding: 64px 0 70px;
   position: relative;
   overflow: hidden;
   background: #f4f1ea;
@@ -124,12 +124,6 @@ a { text-decoration: none; }
 .hero-btn:hover {
   background: var(--coral-dark);
   transform: translateY(-2px);
-}
-.hero-note {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.72rem;
-  color: rgba(0,0,0,0.45);
-  letter-spacing: 0.1em;
 }
 .hero-wave {
   position: absolute;
