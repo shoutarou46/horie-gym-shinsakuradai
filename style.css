@@ -996,6 +996,18 @@ footer {
 .has-photo .ph-label,
 .has-photo .intro-pain-placeholder { display: none; }
 
+.access-highlight {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.04em;
+  background: #fff;
+  padding: 4px 0 20px;
+  margin: 0;
+}
+
 /* ─── CAMPAIGN BANNER ─── */
 .campaign-banner-wrap {
   width: 100%;
